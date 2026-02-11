@@ -34,3 +34,8 @@
 3) Exposed Admin Interface --
    Administrative endpoints are discoverable without proper rate limiting or multi-factor authentication, potentially allowing brute force attacks.
 
+
+## GitHub Community
+
+Starring repositories helps signal project quality and usefulness, supports maintainers through visible appreciation, and improves discoverability of valuable open-source tools. Following developers makes it easier to track relevant work, learn from others’ approaches, and build professional connections that support effective collaboration and long-term career growth.
+
