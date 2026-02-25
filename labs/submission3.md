@@ -45,6 +45,8 @@ user.signingkey=~/.ssh/id_ed25519
 
 #### Verified Badge Evidence:
 
+![Verified commit screenshot](./submission3/verified-commit.png)
+
 After pushing to GitHub, my commit shows a green "Verified" badge, confirming:
 - The SSH key on GitHub matches the one used to sign
 - The commit content hasn't been altered
@@ -70,3 +72,25 @@ When things go wrong, verified signatures help investigators distinguish between
 "Never trust, always verify" applies to code too. Every commit should be verified before integration. With commit signing, you're treating every commit as potentially malicious until proven otherwise.
 
 Without commit signing, anyone with push access could impersonate another developer, inject malicious code, and there would be no way to prove tampering occurred. In DevSecOps, where security is built into every step, commit signing is the foundation of code integrity.
+
+
+## Task 2 – Pre‑commit Secret Scanning
+
+### Hook Setup
+- Hook file created at `.git/hooks/pre-commit` with the provided script.
+- Made executable with `chmod +x`.
+- Docker is required and was available.
+
+### Testing Results
+
+#### 1. Blocked commit (secret detected)
+- Added `test.txt` containing fake github token
+- Ran `git add test.txt` and `git commit -m "test secret"`.
+![Failed commit screenshot](./submission3/failed-commit.png)
+
+### Analysis of Automated Secret Scanning
+- Pre‑commit hooks run **before** a commit is created, so secrets never enter the local Git history.
+- Tools like TruffleHog and Gitleaks use regex patterns and entropy analysis to detect credentials, API keys, and other sensitive strings.
+- By integrating these tools into the development workflow, teams can catch accidental exposures early, reducing the risk of credentials being pushed to remote repositories.
+- The hook also demonstrates how to **allow** certain directories (like `lectures/`) for educational purposes while still scanning the rest of the codebase.
+
