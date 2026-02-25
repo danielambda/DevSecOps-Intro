@@ -34,7 +34,6 @@ Your public key has been saved in /home/daniel/.ssh/id_ed25519.pub
 $ git config --global user.signingkey ~/.ssh/id_ed25519
 $ git config --global commit.gpgSign true
 $ git config --global gpg.format ssh
-
 $ git config --global --list | grep -E "(gpg|signing)"
 commit.gpgsign=true
 gpg.format=ssh
