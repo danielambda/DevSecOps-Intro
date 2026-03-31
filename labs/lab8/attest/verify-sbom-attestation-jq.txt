@@ -1,0 +1,96 @@
+{
+  "verificationNote": "SBOM attestation verified; payload is base64-encoded in-toto statement",
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v0.1",
+    "predicateType": "https://cyclonedx.org/bom",
+    "subject": [
+      {
+        "name": "localhost:5000/juice-shop",
+        "digest": {
+          "sha256": "b029fa83327aa8a3bbcaf161af6269c18c80134942437cb90794233502554e48"
+        }
+      }
+    ],
+    "predicateSummary": {
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "version": 1,
+      "serialNumber": "urn:uuid:ebcfeb67-6b53-4f24-a58f-1c9e6fe043dd",
+      "metadata": {
+        "component": {
+          "bom-ref": "7d0d6d7af4a885ec",
+          "name": "localhost:5000/juice-shop",
+          "type": "container",
+          "version": "sha256:b029fa83327aa8a3bbcaf161af6269c18c80134942437cb90794233502554e48"
+        },
+        "properties": [
+          {
+            "name": "syft:image:labels:maintainer",
+            "value": "Bjoern Kimminich <bjoern.kimminich@owasp.org>"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.authors",
+            "value": "Bjoern Kimminich <bjoern.kimminich@owasp.org>"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.created",
+            "value": "”2025-09-04T05:38:11Z”"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.description",
+            "value": "Probably the most modern and sophisticated insecure web application"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.documentation",
+            "value": "https://help.owasp-juice.shop"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.licenses",
+            "value": "MIT"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.revision",
+            "value": "36870cb"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.source",
+            "value": "https://github.com/juice-shop/juice-shop"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.title",
+            "value": "OWASP Juice Shop"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.url",
+            "value": "https://owasp-juice.shop"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.vendor",
+            "value": "Open Worldwide Application Security Project"
+          },
+          {
+            "name": "syft:image:labels:org.opencontainers.image.version",
+            "value": "19.0.0"
+          }
+        ],
+        "timestamp": "2026-03-31T22:06:16Z",
+        "tools": {
+          "components": [
+            {
+              "author": "anchore",
+              "name": "syft",
+              "type": "application",
+              "version": "1.42.1"
+            }
+          ]
+        }
+      },
+      "componentCount": 3533,
+      "firstThreeComponentNames": [
+        "1to2",
+        "@adraffy/ens-normalize",
+        "@babel/helper-string-parser"
+      ]
+    }
+  }
+}
