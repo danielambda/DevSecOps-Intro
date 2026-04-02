@@ -1,0 +1,410 @@
+[
+  {
+    "category": "missing-hardening",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 1,
+    "title": "<b>Missing Hardening</b> risk at <b>Juice Shop Application</b>",
+    "synthetic_id": "missing-hardening@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "missing-hardening",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 1,
+    "title": "<b>Missing Hardening</b> risk at <b>Persistent Storage</b>",
+    "synthetic_id": "missing-hardening@persistent-storage",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "persistent-storage",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "persistent-storage"
+    ]
+  },
+  {
+    "category": "missing-build-infrastructure",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Missing Build Infrastructure</b> in the threat model (referencing asset <b>Juice Shop Application</b> as an example)",
+    "synthetic_id": "missing-build-infrastructure@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": []
+  },
+  {
+    "category": "server-side-request-forgery",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 1,
+    "title": "<b>Server-Side Request Forgery (SSRF)</b> risk at <b>Juice Shop Application</b> server-side web-requesting the target <b>Webhook Endpoint</b> via <b>To Challenge WebHook</b>",
+    "synthetic_id": "server-side-request-forgery@juice-shop@webhook-endpoint@juice-shop>to-challenge-webhook",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "juice-shop>to-challenge-webhook",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "server-side-request-forgery",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 1,
+    "title": "<b>Server-Side Request Forgery (SSRF)</b> risk at <b>Reverse Proxy</b> server-side web-requesting the target <b>Juice Shop Application</b> via <b>To App</b>",
+    "synthetic_id": "server-side-request-forgery@reverse-proxy@juice-shop@reverse-proxy>to-app",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "reverse-proxy",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "reverse-proxy>to-app",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "reverse-proxy"
+    ]
+  },
+  {
+    "category": "unnecessary-data-transfer",
+    "risk_status": "unchecked",
+    "severity": 1,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 1,
+    "title": "<b>Unnecessary Data Transfer</b> of <b>Tokens & Sessions</b> data at <b>User Browser</b> from/to <b>Juice Shop Application</b>",
+    "synthetic_id": "unnecessary-data-transfer@tokens-sessions@user-browser@juice-shop",
+    "most_relevant_data_asset": "tokens-sessions",
+    "most_relevant_technical_asset": "user-browser",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "user-browser"
+    ]
+  },
+  {
+    "category": "unnecessary-data-transfer",
+    "risk_status": "unchecked",
+    "severity": 1,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 1,
+    "title": "<b>Unnecessary Data Transfer</b> of <b>Tokens & Sessions</b> data at <b>User Browser</b> from/to <b>Reverse Proxy</b>",
+    "synthetic_id": "unnecessary-data-transfer@tokens-sessions@user-browser@reverse-proxy",
+    "most_relevant_data_asset": "tokens-sessions",
+    "most_relevant_technical_asset": "user-browser",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "user-browser"
+    ]
+  },
+  {
+    "category": "unnecessary-technical-asset",
+    "risk_status": "unchecked",
+    "severity": 1,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 1,
+    "title": "<b>Unnecessary Technical Asset</b> named <b>Persistent Storage</b>",
+    "synthetic_id": "unnecessary-technical-asset@persistent-storage",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "persistent-storage",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "persistent-storage"
+    ]
+  },
+  {
+    "category": "unnecessary-technical-asset",
+    "risk_status": "unchecked",
+    "severity": 1,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 1,
+    "title": "<b>Unnecessary Technical Asset</b> named <b>User Browser</b>",
+    "synthetic_id": "unnecessary-technical-asset@user-browser",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "user-browser",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "user-browser"
+    ]
+  },
+  {
+    "category": "cross-site-scripting",
+    "risk_status": "unchecked",
+    "severity": 4,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 2,
+    "title": "<b>Cross-Site Scripting (XSS)</b> risk at <b>Juice Shop Application</b>",
+    "synthetic_id": "cross-site-scripting@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "cross-site-request-forgery",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 4,
+    "exploitation_impact": 1,
+    "title": "<b>Cross-Site Request Forgery (CSRF)</b> risk at <b>Juice Shop Application</b> via <b>Direct to App (no proxy)</b> from <b>User Browser</b>",
+    "synthetic_id": "cross-site-request-forgery@juice-shop@user-browser>direct-to-app-no-proxy",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "user-browser>direct-to-app-no-proxy",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "cross-site-request-forgery",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 4,
+    "exploitation_impact": 1,
+    "title": "<b>Cross-Site Request Forgery (CSRF)</b> risk at <b>Juice Shop Application</b> via <b>To App</b> from <b>Reverse Proxy</b>",
+    "synthetic_id": "cross-site-request-forgery@juice-shop@reverse-proxy>to-app",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "reverse-proxy>to-app",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "missing-waf",
+    "risk_status": "unchecked",
+    "severity": 1,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 1,
+    "title": "<b>Missing Web Application Firewall (WAF)</b> risk at <b>Juice Shop Application</b>",
+    "synthetic_id": "missing-waf@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "unencrypted-communication",
+    "risk_status": "unchecked",
+    "severity": 4,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 3,
+    "title": "<b>Unencrypted Communication</b> named <b>Direct to App (no proxy)</b> between <b>User Browser</b> and <b>Juice Shop Application</b> transferring authentication data (like credentials, token, session-id, etc.)",
+    "synthetic_id": "unencrypted-communication@user-browser>direct-to-app-no-proxy@user-browser@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "user-browser",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "user-browser>direct-to-app-no-proxy",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "unencrypted-communication",
+    "risk_status": "unchecked",
+    "severity": 4,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 2,
+    "title": "<b>Unencrypted Communication</b> named <b>To App</b> between <b>Reverse Proxy</b> and <b>Juice Shop Application</b>",
+    "synthetic_id": "unencrypted-communication@reverse-proxy>to-app@reverse-proxy@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "reverse-proxy",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "reverse-proxy>to-app",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "missing-authentication",
+    "risk_status": "unchecked",
+    "severity": 4,
+    "exploitation_likelihood": 3,
+    "exploitation_impact": 2,
+    "title": "<b>Missing Authentication</b> covering communication link <b>To App</b> from <b>Reverse Proxy</b> to <b>Juice Shop Application</b>",
+    "synthetic_id": "missing-authentication@reverse-proxy>to-app@reverse-proxy@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "reverse-proxy>to-app",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "missing-authentication-second-factor",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Missing Two-Factor Authentication</b> covering communication link <b>Direct to App (no proxy)</b> from <b>User Browser</b> to <b>Juice Shop Application</b>",
+    "synthetic_id": "missing-authentication-second-factor@user-browser>direct-to-app-no-proxy@user-browser@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "user-browser>direct-to-app-no-proxy",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "missing-authentication-second-factor",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Missing Two-Factor Authentication</b> covering communication link <b>To App</b> from <b>User Browser</b> forwarded via <b>Reverse Proxy</b> to <b>Juice Shop Application</b>",
+    "synthetic_id": "missing-authentication-second-factor@reverse-proxy>to-app@reverse-proxy@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "reverse-proxy>to-app",
+    "data_breach_probability": 2,
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "container-baseimage-backdooring",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Container Base Image Backdooring</b> risk at <b>Juice Shop Application</b>",
+    "synthetic_id": "container-baseimage-backdooring@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "probable",
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "unencrypted-asset",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Unencrypted Technical Asset</b> named <b>Juice Shop Application</b>",
+    "synthetic_id": "unencrypted-asset@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "juice-shop"
+    ]
+  },
+  {
+    "category": "unencrypted-asset",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Unencrypted Technical Asset</b> named <b>Persistent Storage</b>",
+    "synthetic_id": "unencrypted-asset@persistent-storage",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "persistent-storage",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": [
+      "persistent-storage"
+    ]
+  },
+  {
+    "category": "missing-vault",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Missing Vault (Secret Storage)</b> in the threat model (referencing asset <b>Juice Shop Application</b> as an example)",
+    "synthetic_id": "missing-vault@juice-shop",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "juice-shop",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": []
+  },
+  {
+    "category": "missing-identity-store",
+    "risk_status": "unchecked",
+    "severity": 2,
+    "exploitation_likelihood": 1,
+    "exploitation_impact": 2,
+    "title": "<b>Missing Identity Store</b> in the threat model (referencing asset <b>Reverse Proxy</b> as an example)",
+    "synthetic_id": "missing-identity-store@reverse-proxy",
+    "most_relevant_data_asset": "",
+    "most_relevant_technical_asset": "reverse-proxy",
+    "most_relevant_trust_boundary": "",
+    "most_relevant_shared_runtime": "",
+    "most_relevant_communication_link": "",
+    "data_breach_probability": "improbable",
+    "data_breach_technical_assets": []
+  }
+]
