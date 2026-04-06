@@ -1,0 +1,49 @@
+{
+  "date": "2026-04-06",
+  "total": 269,
+  "active_by_severity": {
+    "Critical": 21,
+    "High": 147,
+    "Info": 12,
+    "Low": 21,
+    "Medium": 68
+  },
+  "closed_by_severity": {},
+  "verified_count": 143,
+  "mitigated_count": 0,
+  "active_total": 269,
+  "due_next_14_days": 21,
+  "breached_sla": 0,
+  "top_cwe": [
+    {
+      "cwe": 1333,
+      "count": 29
+    },
+    {
+      "cwe": 407,
+      "count": 13
+    },
+    {
+      "cwe": 22,
+      "count": 11
+    },
+    {
+      "cwe": 20,
+      "count": 6
+    },
+    {
+      "cwe": 674,
+      "count": 6
+    }
+  ],
+  "per_test": [
+    {
+      "test_id": 3,
+      "count": 147
+    },
+    {
+      "test_id": 4,
+      "count": 122
+    }
+  ]
+}

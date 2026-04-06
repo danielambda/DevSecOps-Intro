@@ -1,0 +1,12 @@
+Syft was run as in the lab instructions against the digest-pinned image reference.
+Docker produced no stdout; the SBOM was written only via the `-o syft-json=...` path:
+
+  labs/lab4/syft/juice-shop-syft-native.json
+
+Command:
+
+  docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
+    -v "$(pwd)":/tmp anchore/syft:latest \
+    "<REF>" -o syft-json=/tmp/labs/lab4/syft/juice-shop-syft-native.json
+
+(<REF> was the value in labs/lab8/analysis/ref.value at generation time.)
