@@ -1,0 +1,18 @@
+ZAP Scan Comparison: Authenticated vs Unauthenticated
+Generated: Вс 15 мар 2026 00:42:34 MSK
+
+Unauthenticated Scan:
+  Total alerts: 11
+  High: 0
+  Medium: 2
+  Low: 6
+  Info: 3
+  Unique URLs with findings: 15
+
+Authenticated Scan:
+  Total alerts: 13
+  High: 1
+  Medium: 4
+  Low: 4
+  Info: 4
+  Unique URLs with findings: 23
