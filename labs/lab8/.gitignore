@@ -1,0 +1,5 @@
+## Lab 8: do not commit secrets or tooling binaries
+signing/cosign.key
+bin/
+cosign-home/
+

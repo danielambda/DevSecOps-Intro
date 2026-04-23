@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DefectDojo Lab 10 Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; color: #1f2937; }
+    h1, h2 { margin-bottom: 0.4rem; }
+    .muted { color: #6b7280; margin-top: 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0 2rem; }
+    th, td { border: 1px solid #d1d5db; padding: 0.55rem; text-align: left; }
+    th { background: #f3f4f6; }
+    .kpi { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0 2rem; }
+    .card { border: 1px solid #d1d5db; border-radius: 6px; padding: 0.8rem 1rem; min-width: 180px; }
+    .card strong { display: block; font-size: 1.25rem; margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <h1>DefectDojo Reporting Snapshot</h1>
+  <p class="muted">Product: Juice Shop | Engagement: Labs Security Testing | Captured: 2026-04-06</p>
+
+  <div class="kpi">
+    <div class="card">Total Findings<strong>269</strong></div>
+    <div class="card">Active Findings<strong>269</strong></div>
+    <div class="card">Verified Findings<strong>143</strong></div>
+    <div class="card">Mitigated Findings<strong>0</strong></div>
+  </div>
+
+  <h2>Open vs Closed by Severity</h2>
+  <table>
+    <thead>
+      <tr><th>Severity</th><th>Open</th><th>Closed</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Critical</td><td>21</td><td>0</td></tr>
+      <tr><td>High</td><td>147</td><td>0</td></tr>
+      <tr><td>Medium</td><td>68</td><td>0</td></tr>
+      <tr><td>Low</td><td>21</td><td>0</td></tr>
+      <tr><td>Informational</td><td>12</td><td>0</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Findings by Tool</h2>
+  <table>
+    <thead>
+      <tr><th>Tool</th><th>Imported Findings</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>ZAP</td><td>0</td><td>Import attempted, parser expected XML for available ZAP importer.</td></tr>
+      <tr><td>Semgrep</td><td>0</td><td>Import succeeded with zero findings in source report.</td></tr>
+      <tr><td>Trivy</td><td>147</td><td>Highest contributor of High severity findings.</td></tr>
+      <tr><td>Nuclei</td><td>0</td><td>Input file not present in repository for this run.</td></tr>
+      <tr><td>Grype</td><td>122</td><td>Imported successfully via Anchore Grype parser.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>SLA Outlook (14-day window)</h2>
+  <table>
+    <thead>
+      <tr><th>Metric</th><th>Count</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>SLA breaches</td><td>0</td></tr>
+      <tr><td>Due within next 14 days</td><td>21</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Top Recurring CWE Categories</h2>
+  <table>
+    <thead>
+      <tr><th>CWE</th><th>Count</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>CWE-1333</td><td>29</td></tr>
+      <tr><td>CWE-407</td><td>13</td></tr>
+      <tr><td>CWE-22</td><td>11</td></tr>
+      <tr><td>CWE-20</td><td>6</td></tr>
+      <tr><td>CWE-674</td><td>6</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
