@@ -1,0 +1,1 @@
+lrwxrwxrwx 1 root root 50 апр 27 21:50 /usr/local/bin/containerd-shim-kata-v2 -> /run/current-system/sw/bin/containerd-shim-kata-v2

@@ -1,0 +1,8 @@
+{
+  "tests": {
+    "1": "ZAP Scan",
+    "2": "Semgrep Pro JSON Report",
+    "3": "Trivy Scan",
+    "4": "Anchore Grype"
+  }
+}

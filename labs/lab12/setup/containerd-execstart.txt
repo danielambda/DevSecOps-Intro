@@ -1,0 +1,1 @@
+ExecStart={ path=/nix/store/5mml5vy1pqijpnypz897zx2gcqih8pnz-containerd-2.2.1/bin/containerd ; argv[]=/nix/store/5mml5vy1pqijpnypz897zx2gcqih8pnz-containerd-2.2.1/bin/containerd --config=/nix/store/x50aa4aywy5qkyjzc1vi79r7sql52krm-containerd-config-checked.toml ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }

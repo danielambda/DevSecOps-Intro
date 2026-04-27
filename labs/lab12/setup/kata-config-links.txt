@@ -1,0 +1,12 @@
+/etc/kata-containers:
+total 16
+drwxr-xr-x  3 root root 4096 апр 27 22:39 .
+drwxr-xr-x 30 root root 4096 апр 27 22:39 ..
+lrwxrwxrwx  1 root root  113 апр 27 22:39 configuration.toml -> /nix/store/4j6kcrlcwjwd1zri9j2nw4hhkcc4ivjc-kata-runtime-3.21.0/share/defaults/kata-containers/configuration.toml
+drwxr-xr-x  2 root root 4096 апр 27 22:39 runtime-rs
+
+/etc/kata-containers/runtime-rs:
+total 8
+drwxr-xr-x 2 root root 4096 апр 27 22:39 .
+drwxr-xr-x 3 root root 4096 апр 27 22:39 ..
+lrwxrwxrwx 1 root root   39 апр 27 22:39 configuration.toml -> /etc/kata-containers/configuration.toml

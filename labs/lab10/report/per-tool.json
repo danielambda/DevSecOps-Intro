@@ -1,0 +1,12 @@
+[
+  {
+    "test_id": 3,
+    "count": 147,
+    "test_type_name": "Trivy Scan"
+  },
+  {
+    "test_id": 4,
+    "count": 122,
+    "test_type_name": "Anchore Grype"
+  }
+]
